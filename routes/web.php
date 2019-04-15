@@ -12,5 +12,13 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('auth.login');
 });
+
+Route::resource('articles', 'ArticlesController');
+Route::resource('categories', 'CategoriesController');
+Route::post('categories/restore/{id}','CategoriesController@restore')->name('categories.restore');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

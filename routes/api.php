@@ -39,6 +39,9 @@ Route::group(['namespace' => 'Api'], function () {
         ]
     ]);
 
+    Route::resource('articles', 'ArticlesController');
+    Route::resource('categories', 'CategoriesController');
+
     Route::get('tags', 'TagController@index');
 
 });
