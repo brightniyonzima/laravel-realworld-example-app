@@ -48,5 +48,6 @@ class CategoriesTest extends TestCase
         $response = $this->json('delete', '/api/categories/1', ['id' => '1']);
 
         $response->assertStatus(200);
+        //check different status codes
     }
 }

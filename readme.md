@@ -25,9 +25,9 @@ Just look for the corresponding controller e.g ArticlesController and then add a
 
 ## Quick navigation guidelines to answer some of the interview tasks after successfuly setting up
 
-    To allocate a category to an article, click on the **add category** button from the article list at **/articles**
-    To review code that handles addition of API endpoints to list, add, edit and delete the categories, go into the **\app\Http\Controllers\Api\CategoriesController.php *** file
-    To review the unit tests, go to **\tests\Unit\CategoriesTest.php** file
+    To allocate a category to an article, click on the 'add category' button from the article list at (/articles)
+    To review code that handles addition of API endpoints to list, add, edit and delete the categories, go into the (\app\Http\Controllers\Api\CategoriesController.php) file
+    To review the unit tests, go to (\tests\Unit\CategoriesTest.php) file
 
 ## Installation
 
