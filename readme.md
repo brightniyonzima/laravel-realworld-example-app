@@ -1,11 +1,11 @@
-# ![Laravel Example App](logo.png)
+# ![Kanzu code demo]
 
 # Getting started
 
 ## Design pattern used
 ### Repository pattern
 
-Different classes are in different repositories or folders with namespaces and then classes resolve the namespaces and understands which file is in which namespace
+The repository design pattern has been used where different classes are in different repositories or folders with namespaces and then classes resolve the namespaces and understands which file is in which namespace
 
 ## Is the codebase maintainable?
 ### yes it is :-)
@@ -18,9 +18,15 @@ Yes it is. Classes containing small methods that are called when needed are used
 Just look for the corresponding controller e.g ArticlesController and then add a function to do whatever feature or logic that you want
 
 ## Minimum requirements
-   PHP v5.6 but preferably PHP version 7.0.2
-   Apache web server version 2.4 or above
-   Mysql version 5.7.19 and above
+
+    PHP v5.6 but preferably PHP version 7.0.2
+    Apache web server version 2.4 or above
+    Mysql version 5.7.19 and above
+
+## Quick navigation guidelines to answer some of the interview tasks
+
+    To allocate a category to an article, click on the *** add category *** button from the article list at *** /articles ***
+    To review code that handles addition of API endpoints to list, add, edit and delete the categories, go into the ***  \app\Http\Controllers\Api\CategoriesController.php *** file
 
 ## Installation
 
