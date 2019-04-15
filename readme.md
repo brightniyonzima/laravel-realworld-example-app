@@ -23,9 +23,9 @@ Just look for the corresponding controller e.g ArticlesController and then add a
     Apache web server version 2.4 or above
     Mysql version 5.7.19 and above
 
-## Quick navigation guidelines to answer some of the interview tasks
+## Quick navigation guidelines to answer some of the interview tasks after successfuly setting up
 
-    To allocate a category to an article, click on the *** add category *** button from the article list at *** /articles ***
+    To allocate a category to an article, click on the ***add category*** button from the article list at ***/articles***
     To review code that handles addition of API endpoints to list, add, edit and delete the categories, go into the ***  \app\Http\Controllers\Api\CategoriesController.php *** file
 
 ## Installation
@@ -69,7 +69,7 @@ You can now access the server at http://localhost:8000
 
 **TL;DR command list**
 
-    git clone git@github.com:gothinkster/laravel-realworld-example-app.git
+    git clone https://github.com/brightniyonzima/laravel-realworld-example-app.git
     cd laravel-realworld-example-app
     composer install
     cp .env.example .env
@@ -92,6 +92,11 @@ Open the DummyDataSeeder and set the property values as per your requirement
 Run the database seeder and you're done
 
     php artisan db:seed
+
+Log in using the following credentials
+
+    Email: brightniyonzima@gmail.com
+    Password: kanzu#123
 
 ***Note*** : It's recommended to have a clean database before seeding. You can refresh your migrations at any point to clean the database by running the following command
 
@@ -143,6 +148,10 @@ More information regarding the project can be found here https://github.com/goth
 ----------
 
 # Testing API
+
+To start running the tests, do not forget to change the database credentials in phpunit.xml DB_DATABASE value to match your database
+
+    <env name="DB_DATABASE" value="kanzu_code"/>
 
 Run the laravel development server
 
