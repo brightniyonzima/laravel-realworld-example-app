@@ -1,14 +1,26 @@
 # ![Laravel Example App](logo.png)
 
-[![Build Status](https://img.shields.io/travis/gothinkster/laravel-realworld-example-app/master.svg)](https://travis-ci.org/gothinkster/laravel-realworld-example-app) [![Gitter](https://img.shields.io/gitter/room/realworld-dev/laravel.svg)](https://gitter.im/realworld-dev/laravel) [![GitHub stars](https://img.shields.io/github/stars/gothinkster/laravel-realworld-example-app.svg)](https://github.com/gothinkster/laravel-realworld-example-app/stargazers) [![GitHub license](https://img.shields.io/github/license/gothinkster/laravel-realworld-example-app.svg)](https://raw.githubusercontent.com/gothinkster/laravel-realworld-example-app/master/LICENSE)
-
-> ### Example Laravel codebase containing real world examples (CRUD, auth, advanced patterns and more) that adheres to the [RealWorld](https://github.com/gothinkster/realworld-example-apps) spec and API.
-
-This repo is functionality complete — PRs and issues welcome!
-
-----------
-
 # Getting started
+
+## Design pattern used
+### Repository pattern
+
+Different classes are in different repositories or folders with namespaces and then classes resolve the namespaces and understands which file is in which namespace
+
+## Is the codebase maintainable?
+### yes it is :-)
+
+Yes it is. Classes containing small methods that are called when needed are used. Most of the classes deal with one model is it is easy to guess what class deals with what e.g CategoriesController class deals with things that are related to the category model(categories table if you want)
+
+## How hard is it to add a feature?
+### very easy really
+
+Just look for the corresponding controller e.g ArticlesController and then add a function to do whatever feature or logic that you want
+
+## Minimum requirements
+   PHP v5.6 but preferably PHP version 7.0.2
+   Apache web server version 2.4 or above
+   Mysql version 5.7.19 and above
 
 ## Installation
 
@@ -17,7 +29,7 @@ Please check the official laravel installation guide for server requirements bef
 
 Clone the repository
 
-    git clone git@github.com:gothinkster/laravel-realworld-example-app.git
+    git clone https://github.com/brightniyonzima/laravel-realworld-example-app
 
 Switch to the repo folder
 
